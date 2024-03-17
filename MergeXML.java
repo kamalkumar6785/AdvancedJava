@@ -32,9 +32,9 @@ public class MergeXML {
             extractLicenseElements(document1);
             extractLicenseElements(document2);
 
-            BufferedWriter mergedFileWriter = new BufferedWriter(new FileWriter("mergedList.txt"));
-            BufferedWriter validLicenseWriter = new BufferedWriter(new FileWriter("validLicenses.txt"));
-            BufferedWriter invalidLicenseWriter = new BufferedWriter(new FileWriter("invalidLicenses.txt"));
+            BufferedWriter mergedFileWriter = new BufferedWriter(new FileWriter("mergedLicenseList.txt"));
+            BufferedWriter validLicenseWriter = new BufferedWriter(new FileWriter("validLicensesList.txt"));
+            BufferedWriter invalidLicenseWriter = new BufferedWriter(new FileWriter("invalidLicensesList.txt"));
 
             // Writing headers
             mergedFileWriter.write(HEADER_ROW);
